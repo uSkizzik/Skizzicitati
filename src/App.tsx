@@ -27,8 +27,8 @@ function AuthorFilter({ author, isSelected, addSelectedAuthor, removeSelectedAut
 }
 
 function AuthorPopover({ quoteAuthor }: { quoteAuthor: IQuoteAuthor }) {
-	const author = authors.find((a) => a.authorId === quoteAuthor.authorId)
-	if (!author) return "FIX ME"
+	let author = authors.find((a) => a.authorId === quoteAuthor.authorId) as IAuthor
+	if (!author) author = { authorId: Number.MAX_VALUE, name: "Непознат Автор" }
 
 	const authorQuotes = getAuthorQuotes(author.authorId)
 	const aliases = Array.from(new Set(authorQuotes.map((q) => (q.authors.find((a) => a.authorId === author.authorId) as IQuoteAuthor).creditedAs).filter((a) => a.toLowerCase() !== author.name.toLowerCase())))

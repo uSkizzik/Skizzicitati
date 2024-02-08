@@ -202,5 +202,17 @@
 	{
 		"authorId": 50,
 		"name": "Krisko Beats"
+	},
+	{
+		"authorId": 51,
+		"name": "Chervenata Shapchica"
+	},
+	{
+		"authorId": 52,
+		"name": "Svetlio Canev"
+	},
+	{
+		"authorId": 53,
+		"name": "Marto Dizela"
 	}
 ]

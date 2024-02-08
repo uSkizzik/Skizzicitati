@@ -1847,5 +1847,118 @@
 				"creditedAs": "dankata"
 			}
 		]
+	},
+	{
+		"content": ["az q znam koq i e kolata (na taq po nemski)", "ai da i srejem spirachkite", "ostei, tq i bez tva ne gi polzva, nali shteshe da pregazi marin"],
+		"authors": [
+			{
+				"authorId": 21,
+				"creditedAs": "Aleks"
+			},
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			},
+			{
+				"authorId": 21,
+				"creditedAs": "Aleks"
+			}
+		]
+	},
+	{
+		"content": ["das handy... (iska si ostavim telefonite)", "aaaa handy *prai sa che si bie chikiq*"],
+		"authors": [
+			{
+				"authorId": 51,
+				"creditedAs": "Gospojata po nemski"
+			},
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			}
+		]
+	},
+	{
+		"content": ["kvo znachi keinen (pravim kontrolno po nemski)", "che se otkazvash ot neshto", "danka, otkazvam sa ot tebe"],
+		"authors": [
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			},
+			{
+				"authorId": 21,
+				"creditedAs": "Aleks"
+			},
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			}
+		]
+	},
+	{
+		"content": ["*tununika si erika dokato pravi kontrolno po nemski*", "vijte go kak pee gospojo, znae go nemskiq"],
+		"authors": [
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			},
+			{
+				"authorId": 21,
+				"creditedAs": "Aleks"
+			}
+		]
+	},
+	{
+		"content": ["trqa si izvadq julta knijka (dokato kontrolno po nemski)", "te na nikodimova ne sa dali pa na tebe da ti dadat"],
+		"authors": [
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			},
+			{
+				"authorId": 29,
+				"creditedAs": "Papazov"
+			}
+		]
+	},
+	{
+		"content": ["To dneska celiq den e citat"],
+		"authors": [
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			}
+		]
+	},
+	{
+		"content": ["Provazglasqvam ta za...", "pedal!"],
+		"authors": [
+			{
+				"authorId": 52,
+				"creditedAs": "Canev Popa"
+			},
+			{
+				"authorId": 21,
+				"creditedAs": "Aleks"
+			}
+		]
+	},
+	{
+		"content": ["Mene ma e strah ot aleks, ama ne i ot tebe... Zatova ti si pedal."],
+		"authors": [
+			{
+				"authorId": 53,
+				"creditedAs": "Dizela"
+			}
+		]
+	},
+	{
+		"content": ["To sveta na vremeto e bil cherno-bql, nali gospojo? (dokato pravim kontrolno po nemski)"],
+		"authors": [
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			}
+		]
 	}
 ]
