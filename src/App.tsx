@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import { Form, Offcanvas, OverlayTrigger, Popover } from "react-bootstrap"
 
 import classNames from "classnames"
@@ -7,7 +7,6 @@ import { IAuthor, IQuote, IQuoteAuthor } from "@/interfaces/Quote.interface"
 
 import authors from "./data/authors.json"
 import quotes from "./data/quotes.json"
-import useForceUpdate from "@restart/hooks/useForceUpdate"
 
 function getAuthorQuotes(authorId: number) {
 	return quotes.filter((q) => q.authors.some((a) => a.authorId === authorId))
@@ -88,12 +87,6 @@ function Quote({ quote }: { quote: IQuote }) {
 }
 
 function Dialogue({ quote }: { quote: IQuote }) {
-	const Popover = (
-		<div>
-			<AuthorPopover quoteAuthor={quote.authors[0]} />
-		</div>
-	)
-
 	return (
 		<div className="sm:tw-px-6 tw-py-3 tw-w-full tw-flex tw-rounded">
 			<div className="tw-relative tw-me-3 tw-min-w-[50px] tw-min-h-[50px] tw-max-h-[50px]">
