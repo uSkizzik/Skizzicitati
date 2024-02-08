@@ -1960,5 +1960,32 @@
 				"creditedAs": "Rado"
 			}
 		]
+	},
+	{
+		"content": ["Znaite li kak se kazva pasiven gei? Kolio."],
+		"authors": [
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			}
+		]
+	},
+	{
+		"content": ["ei takiva mladi gospoji da imate"],
+		"authors": [
+			{
+				"authorId": 33,
+				"creditedAs": "Minchev"
+			}
+		]
+	},
+	{
+		"content": ["rado, ai mi napravish edno handy"],
+		"authors": [
+			{
+				"authorId": 24,
+				"creditedAs": "Dankata"
+			}
+		]
 	}
 ]
