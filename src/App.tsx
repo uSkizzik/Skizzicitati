@@ -92,7 +92,7 @@ function Dialogue({ quote }: { quote: IQuote }) {
 			<div className="tw-relative tw-me-3 tw-min-w-[50px] tw-min-h-[50px] tw-max-h-[50px]">
 				<img className="tw-min-w-[35px] tw-min-h-[35px] tw-rounded-full tw-outline tw-outline-background-600 tw-absolute tw-z-10" alt="" width={35} height={35} src={"/avatars/" + quote.authors[0].authorId + ".webp"} onError={(e) => ((e.target as HTMLImageElement).src = "/avatars/default/" + (quote.authors[0].authorId % 5) + ".png")} />
 				<img className="tw-min-w-[35px] tw-min-h-[35px] tw-rounded-full tw-absolute tw-bottom-0 tw-right-0" alt="" width={35} height={35} src={"/avatars/" + quote.authors[1].authorId + ".webp"} onError={(e) => ((e.target as HTMLImageElement).src = "/avatars/default/" + (quote.authors[1].authorId % 5) + ".png")} />
-				{quote.starred ? <i className="fas fa-star tw-text-[gold] tw-text-md tw-absolute tw-bottom-0 -tw-right-2" /> : <i />}
+				{quote.starred ? <i className="fas fa-star tw-text-[gold] tw-text-md tw-absolute -tw-bottom-1 -tw-right-2" /> : <i />}
 			</div>
 
 			<div className="tw-flex tw-flex-col">
@@ -188,7 +188,9 @@ function App() {
 						</h1>
 						<div className="tw-text-lg tw-mt-2 tw-text-gray-200">
 							<p className="tw-mb-3">Skizzicitati е колекция от забавни цитати и изцепки, които съм чул (или казъл) и записал.</p>
-							<p className="tw-mb-3">Колекцията расте постоянно от 2021 г. насам и беше крайно време да се направи една добре изглеждаща страница, до която всеки има достъп, за да провери колко голям идиот е.</p>
+							<p className="tw-mb-3">
+								Колекцията расте постоянно от 2021 г. насам, като вмомента съдържа <strong>{quotes.length}</strong> цитата. Беше крайно време да се направи една добре изглеждаща страница, до която всеки има достъп, за да провери колко голям идиот е.
+							</p>
 							{/*<p className="tw-mb-3">*/}
 							{/*	Тук могат да се намерят два вида цитати - единични и диалогови. Диалоговите, както името подсказва, включват двама или повече човека. Цитати, които имат звездичка (<i className="fas fa-star" />) до снимката на автора са (според моя преценка) най-забавни и най-запомнящи се.*/}
 							{/*</p>*/}

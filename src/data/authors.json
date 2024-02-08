@@ -178,5 +178,29 @@
 	{
 		"authorId": 44,
 		"name": "Vlado"
+	},
+	{
+		"authorId": 45,
+		"name": "Detelinka po ZBUT"
+	},
+	{
+		"authorId": 46,
+		"name": "Daniel Damqnov"
+	},
+	{
+		"authorId": 47,
+		"name": "Teodor Bossa"
+	},
+	{
+		"authorId": 48,
+		"name": "Kolio"
+	},
+	{
+		"authorId": 49,
+		"name": "Konakchieva"
+	},
+	{
+		"authorId": 50,
+		"name": "Krisko Beats"
 	}
 ]
