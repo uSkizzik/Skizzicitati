@@ -1987,5 +1987,52 @@
 				"creditedAs": "Dankata"
 			}
 		]
+	},
+	{
+		"content": ["za kakvo stava na vupros?", "za komputura na djon atanasov", "da toq e mnoo vajen chkvek"],
+		"authors": [
+			{
+				"authorId": 34,
+				"creditedAs": "Koseva"
+			},
+			{
+				"authorId": 54,
+				"creditedAs": "Kamen"
+			},
+			{
+				"authorId": 27,
+				"creditedAs": "Koseva"
+			}
+		]
+	},
+	{
+		"content": ["okeana oshte kolko neshta krie", "na petko glavata", "na maika ti put-"],
+		"authors": [
+			{
+				"authorId": 34,
+				"creditedAs": "Koseva"
+			},
+			{
+				"authorId": 54,
+				"creditedAs": "Kamen"
+			},
+			{
+				"authorId": 27,
+				"creditedAs": "Koseva"
+			}
+		]
+	},
+	{
+		"content": ["ne, micelarnata voda naistina mnogo pomaga (za kojata)", "kvo? mahash si grima s micelarns voda?"],
+		"authors": [
+			{
+				"authorId": 29,
+				"creditedAs": "Papazov"
+			},
+			{
+				"authorId": 27,
+				"creditedAs": "Koseva"
+			}
+		]
 	}
 ]
