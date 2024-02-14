@@ -31,7 +31,44 @@ function AuthorPopover({ quoteAuthor }: { quoteAuthor: IQuoteAuthor }) {
 	if (!author) author = { authorId: Number.MAX_VALUE, name: "Непознат Автор" }
 
 	const authorQuotes = getAuthorQuotes(author.authorId)
-	const aliases = Array.from(new Set(authorQuotes.map((q) => (q.authors.find((a) => a.authorId === author.authorId) as IQuoteAuthor).creditedAs).filter((a) => a.toLowerCase() !== author.name.toLowerCase())))
+	const aliases = Array.from(
+		new Set(
+			authorQuotes
+				.map((q) => {
+					return (q.authors.find((a) => a.authorId === author.authorId) as IQuoteAuthor).creditedAs
+				})
+				.map((a) => {
+					return a.trim().split(" kum")[0].trim()
+				})
+				.map((a) => {
+					return a
+						.trim()
+						.split(/ v(uv)? /)[0]
+						.split(/ s(us)? /)[0]
+						.split(/ [a-z]+ki /)[0]
+						.split(/ [a-z]+sht /)[0]
+						.split(/ [a-z]+ing /)[0]
+						.split(" dokato ")[0]
+						.split(" kogato ")[0]
+						.split(" sled ")[0]
+						.split(" izvun ")[0]
+						.split(" za ")[0]
+						.split(" out of context ")[0]
+						.trim()
+				})
+				.map((a) => {
+					return a.trim().split(",")[0].trim()
+				})
+				.map((a) => {
+					const b = a.slice(0, 4).normalize()
+					return b[0].toUpperCase() + b.slice(1) + a.slice(4)
+				})
+				.filter((a) => {
+					return a.toLowerCase() !== author.name.toLowerCase().trim()
+				})
+				.sort()
+		)
+	)
 
 	return (
 		<Popover className="tw-p-4 tw-w-[300px] tw-rounded tw-bg-background-300">
@@ -42,12 +79,16 @@ function AuthorPopover({ quoteAuthor }: { quoteAuthor: IQuoteAuthor }) {
 					<span>Цитати: {authorQuotes.length}</span>
 				</div>
 			</div>
-			<div className="tw-mt-3 tw-font-bold">Познат също като:</div>
-			<div className="tw-text-sm tw-overflow-auto tw-pb-1">
-				{aliases.map((a) => (
-					<span className="tw-block tw-text-nowrap">{a}</span>
-				))}
-			</div>
+			{aliases.length ? (
+				<>
+					<div className="tw-mt-3 tw-font-bold">Познат също като:</div>
+					<div className="tw-text-sm tw-overflow-auto tw-pb-1">
+						{aliases.map((a) => (
+							<span className="tw-block tw-text-nowrap">{a}</span>
+						))}
+					</div>
+				</>
+			) : null}
 		</Popover>
 	)
 }
