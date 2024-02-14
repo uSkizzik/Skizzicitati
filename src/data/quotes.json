@@ -2034,5 +2034,59 @@
 				"creditedAs": "Koseva"
 			}
 		]
+	},
+	{
+		"content": ["Chakai malko be, beshe mi v gurloto... Shtqh da se zadavq!"],
+		"authors": [
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			}
+		]
+	},
+	{
+		"content": ["brat trqq go zahapq da go duham hubavo"],
+		"authors": [
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			}
+		]
+	},
+	{
+		"content": ["Vij, ti i podarqvash buket, tq kazva na men che me obicha"],
+		"authors": [
+			{
+				"authorId": 33,
+				"creditedAs": "Minchev kum Rado"
+			}
+		]
+	},
+	{
+		"content": ["Toi ako ima kvo da sloji v toq prezarvativ nqmashe da..."],
+		"authors": [
+			{
+				"authorId": 33,
+				"creditedAs": "Choveka Citat (Minchev) sled kato Rado udrq Bobo s prezarvativ"
+			}
+		]
+	},
+	{
+		"content": ["Nedei ma pipa... Shte si pomislq neshto"],
+		"authors": [
+			{
+				"authorId": 33,
+				"creditedAs": "Choveka Citat kum Rado"
+			}
+		]
+	},
+	{
+		"content": ["tui principno vurvi i s tui ama sh otkachish... sh mrudnesh na akul"],
+		"authors": [
+			{
+				"authorId": 9,
+				"creditedAs": "Maikata na Rado"
+			}
+		]
 	}
 ]
