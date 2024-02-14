@@ -38,9 +38,6 @@ function AuthorPopover({ quoteAuthor }: { quoteAuthor: IQuoteAuthor }) {
 					return (q.authors.find((a) => a.authorId === author.authorId) as IQuoteAuthor).creditedAs
 				})
 				.map((a) => {
-					return a.trim().split(" kum")[0].trim()
-				})
-				.map((a) => {
 					return a
 						.trim()
 						.split(/ v(uv)? /)[0]
@@ -48,16 +45,15 @@ function AuthorPopover({ quoteAuthor }: { quoteAuthor: IQuoteAuthor }) {
 						.split(/ [a-z]+ki /)[0]
 						.split(/ [a-z]+sht /)[0]
 						.split(/ [a-z]+ing /)[0]
+						.split(" kum")[0]
 						.split(" dokato ")[0]
 						.split(" kogato ")[0]
 						.split(" sled ")[0]
 						.split(" izvun ")[0]
 						.split(" za ")[0]
 						.split(" out of context ")[0]
+						.split(",")[0]
 						.trim()
-				})
-				.map((a) => {
-					return a.trim().split(",")[0].trim()
 				})
 				.map((a) => {
 					const b = a.slice(0, 4).normalize()
