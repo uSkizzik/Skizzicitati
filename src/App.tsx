@@ -134,8 +134,8 @@ function Dialogue({ quote }: { quote: IQuote }) {
 
 			<div className="tw-flex tw-flex-col">
 				{quote.content.map((c, i) => (
-					<div key={i} className="tw-flex">
-						<div>
+					<div key={i}>
+						<span>
 							<OverlayTrigger
 								trigger="click"
 								placement="right"
@@ -148,7 +148,7 @@ function Dialogue({ quote }: { quote: IQuote }) {
 							>
 								<span className="tw-font-bold tw-me-1 tw-cursor-pointer hover:tw-underline">{quote.authors[i].creditedAs}:</span>
 							</OverlayTrigger>
-						</div>
+						</span>
 						<span className="tw-whitespace-pre-line">{c}</span>
 					</div>
 				))}
