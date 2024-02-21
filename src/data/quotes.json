@@ -1760,6 +1760,7 @@
 		]
 	},
 	{
+		"starred": true,
 		"content": ["sgovorna drujina ot planina umira"],
 		"authors": [
 			{
@@ -1778,6 +1779,7 @@
 		]
 	},
 	{
+		"starred": true,
 		"content": ["Petko, kaji mi dali moje da se vodi dialog s papagal.", "Ne moje, zashtoto ne e chovek, nqma mozuk!"],
 		"authors": [
 			{
@@ -1827,6 +1829,7 @@
 		]
 	},
 	{
+		"starred": true,
 		"content": ["Ai brad chakam racheva ti leakne huq", "chakam gabriela da ti leakne cicite"],
 		"authors": [
 			{
@@ -1849,6 +1852,7 @@
 		]
 	},
 	{
+		"starred": true,
 		"content": ["az q znam koq i e kolata (na taq po nemski)", "ai da i srejem spirachkite", "ostei, tq i bez tva ne gi polzva, nali shteshe da pregazi marin"],
 		"authors": [
 			{
@@ -1909,6 +1913,7 @@
 		]
 	},
 	{
+		"starred": true,
 		"content": ["trqa si izvadq julta knijka (dokato kontrolno po nemski)", "te na nikodimova ne sa dali pa na tebe da ti dadat"],
 		"authors": [
 			{
@@ -1953,6 +1958,7 @@
 		]
 	},
 	{
+		"starred": true,
 		"content": ["To sveta na vremeto e bil cherno-bql, nali gospojo? (dokato pravim kontrolno po nemski)"],
 		"authors": [
 			{
@@ -1962,6 +1968,7 @@
 		]
 	},
 	{
+		"starred": true,
 		"content": ["Znaite li kak se kazva pasiven gei? Kolio."],
 		"authors": [
 			{
@@ -2001,7 +2008,7 @@
 			},
 			{
 				"authorId": 27,
-				"creditedAs": "Koseva"
+				"creditedAs": "-/Petko"
 			}
 		]
 	},
@@ -2018,7 +2025,7 @@
 			},
 			{
 				"authorId": 27,
-				"creditedAs": "Koseva"
+				"creditedAs": "Pepi"
 			}
 		]
 	},
@@ -2058,7 +2065,7 @@
 		"authors": [
 			{
 				"authorId": 33,
-				"creditedAs": "Minchev kum Rado"
+				"creditedAs": "Minchev kum Rado otnosno Anjelika"
 			}
 		]
 	},
@@ -2086,6 +2093,310 @@
 			{
 				"authorId": 9,
 				"creditedAs": "Maikata na Rado govoreiki za whiskeyto i hella"
+			}
+		]
+	},
+	{
+		"newQuotes": true,
+		"starred": true,
+		"content": ["danka ai na banicharnicata... da ti machkam banicite"],
+		"authors": [
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			}
+		]
+	},
+	{
+		"content": ["mulchi we triugulnik"],
+		"authors": [
+			{
+				"authorId": 54,
+				"creditedAs": "Kamen"
+			}
+		]
+	},
+	{
+		"content": ["together... we are valorant!"],
+		"authors": [
+			{
+				"authorId": 24,
+				"creditedAs": "Dankata"
+			}
+		]
+	},
+	{
+		"content": ["danka, pikai mi sa, ela da ti sa izpikaq v ustata"],
+		"authors": [
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			}
+		]
+	},
+	{
+		"content": ["ne vinagi ot purviq put vliza"],
+		"authors": [
+			{
+				"authorId": 32,
+				"creditedAs": "Todorova"
+			}
+		]
+	},
+	{
+		"content": ["Gospojo, a v-bucks znaete li ot kude moga da si vzema?"],
+		"authors": [
+			{
+				"authorId": 17,
+				"creditedAs": "Qnko kum Nikodimova"
+			}
+		]
+	},
+	{
+		"content": ["Gospojo, toj karal s 200 do Babenec i pred nego izskochil tir i toi minal pod tira"],
+		"authors": [
+			{
+				"authorId": 17,
+				"creditedAs": "Qnko, obqsnqvaiki na Nikodimova kak Teodor padnal s motora"
+			}
+		]
+	},
+	{
+		"starred": true,
+		"content": ["Gospojo, iskam da wa pitam neshto. Znaete li che ot toq klas bash Georgi Dachev pishe pesni? Izvesten e v YouTube daje! Mitrevv se pishe!"],
+		"authors": [
+			{
+				"authorId": 17,
+				"creditedAs": "Qnko"
+			}
+		]
+	},
+	{
+		"content": ["Ot nego futbolist ne stana ama pone pevec stana!", "Che toi trenira li oshte?", "Trenira ama ne mu se poluchava."],
+		"authors": [
+			{
+				"authorId": 17,
+				"creditedAs": "Qnko govoreiki za Dachev"
+			},
+			{
+				"authorId": 22,
+				"creditedAs": "Nikodimova"
+			},
+			{
+				"authorId": 17,
+				"creditedAs": "Qnko"
+			}
+		]
+	},
+	{
+		"content": ["Chakaite che si raztegnah da ne kazvam koe, zabolqha me tashacite."],
+		"authors": [
+			{
+				"authorId": 17,
+				"creditedAs": "Qnko kum Nikodimova"
+			}
+		]
+	},
+	{
+		"content": ["Az sum nabojna!", "Tapeta mi e na isus!"],
+		"authors": [
+			{
+				"authorId": 55,
+				"creditedAs": "Ivana"
+			},
+			{
+				"authorId": 54,
+				"creditedAs": "Kamen"
+			}
+		]
+	},
+	{
+		"content": ["*govori da ne hvurlqme himikali*", "*hvurlq si himikala prez staqta* opa che mi padna himikala"],
+		"authors": [
+			{
+				"authorId": 22,
+				"creditedAs": "Nikodimova"
+			},
+			{
+				"authorId": 17,
+				"creditedAs": "Qnko"
+			}
+		]
+	},
+	{
+		"content": ["Iznervih sa ot purviq chas - tri uchebnika izvadih i trite mi gi vze!"],
+		"authors": [
+			{
+				"authorId": 16,
+				"creditedAs": "Anjelika govoreiki za chasa po biologiq"
+			}
+		]
+	},
+	{
+		"content": ["Dva vuprosa ti zadavam, tri, i ti pisha dvoika."],
+		"authors": [
+			{
+				"authorId": 49,
+				"creditedAs": "Konakchieva"
+			}
+		]
+	},
+	{
+		"content": ["Ei brat dneska tei sh oporq maika mi..."],
+		"authors": [
+			{
+				"authorId": 24,
+				"creditedAs": "Dankata"
+			}
+		]
+	},
+	{
+		"content": ["Tui sh q udrunkam [maika mu]"],
+		"authors": [
+			{
+				"authorId": 24,
+				"creditedAs": "Dankata"
+			}
+		]
+	},
+	{
+		"content": ["Shh, po-poleka s tva uiski, nqa pari"],
+		"authors": [
+			{
+				"authorId": 9,
+				"creditedAs": "Maikata na Rado"
+			}
+		]
+	},
+	{
+		"content": ["Kak da ti pomogna da ti go durja li? Dobre, shte ti go durja."],
+		"authors": [
+			{
+				"authorId": 0,
+				"creditedAs": "Rado kum maika mu"
+			}
+		]
+	},
+	{
+		"content": ["Abe na mene mi e golqm, na tebe kat ti e maluk sa opraqi"],
+		"authors": [
+			{
+				"authorId": 0,
+				"creditedAs": "Rado kum maika mu"
+			}
+		]
+	},
+	{
+		"content": ["are we, shte go hvana"],
+		"authors": [
+			{
+				"authorId": 16,
+				"creditedAs": "Anjelika"
+			}
+		]
+	},
+	{
+		"content": ["moq e na harry potter"],
+		"authors": [
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			}
+		]
+	},
+	{
+		"content": ["Drugi vuprosi ima li?", "Koga shte si hodim?"],
+		"authors": [
+			{
+				"authorId": 37,
+				"creditedAs": "Violina prez vtoriq chas"
+			},
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			}
+		]
+	},
+	{
+		"starred": true,
+		"content": ["Kamene, ti ne si mudur, ti si pedal"],
+		"authors": [
+			{
+				"authorId": 27,
+				"creditedAs": "Pepi"
+			}
+		]
+	},
+	{
+		"content": ["Gospodine, golqmoto prase e pulno!"],
+		"authors": [
+			{
+				"authorId": 0,
+				"creditedAs": "Rado kum Canev (malkoto prase)"
+			}
+		]
+	},
+	{
+		"content": ["Eto vi edna byrza zadacha za izpita v 10-ti klas", "10-ti? Ama nie sme 9-ti...", "Nishto"],
+		"authors": [
+			{
+				"authorId": 27,
+				"creditedAs": "Pepi"
+			},
+			{
+				"authorId": 32,
+				"creditedAs": "Todorova"
+			},
+			{
+				"authorId": 27,
+				"creditedAs": "Pepi"
+			}
+		]
+	},
+	{
+		"content": ["Te i decata hodqt v Imperial"],
+		"authors": [
+			{
+				"authorId": 56,
+				"creditedAs": "Sina na Donchev"
+			}
+		]
+	},
+	{
+		"content": ["Neron - rimski imperator. Po negovo breme zapalvat Rim. Kazal \"sled men potop!\" i si trugnal. I nie sme malko tei s gospodina [minchev]", "sh palim daskalo?"],
+		"authors": [
+			{
+				"authorId": 57,
+				"creditedAs": "Palev"
+			},
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			}
+		]
+	},
+	{
+		"content": ["*chuka na vratata na kenefa*", "zaeto", "a, dobre", "a danka, za tebe ne e zaeto", "koi sh ebe konq?"],
+		"authors": [
+			{
+				"authorId": 24,
+				"creditedAs": "Dankata"
+			},
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			},
+			{
+				"authorId": 24,
+				"creditedAs": "Dankata"
+			},
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			},
+			{
+				"authorId": 48,
+				"creditedAs": "Kolio"
 			}
 		]
 	}
