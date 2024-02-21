@@ -193,6 +193,10 @@ function App() {
 				<i className="fas fa-filter" />
 			</button>
 
+			<a className="tw-flex tw-items-center tw-justify-center tw-text-gray-400 tw-text-xl tw-rounded-full tw-bg-background-600 tw-w-[45px] tw-h-[45px] tw-fixed tw-bottom-6 tw-right-6 hover:tw-text-gray-100" href="#new">
+				<i className="fas fa-chevron-down" />
+			</a>
+
 			<Offcanvas className="tw-bg-background-500" show={show} placement="end" backdrop={false} scroll onHide={() => setShow(false)}>
 				<Offcanvas.Header closeButton>
 					<Offcanvas.Title>Филтриране</Offcanvas.Title>
@@ -218,7 +222,7 @@ function App() {
 
 			<div className="tw-py-10 tw-flex tw-flex-col tw-items-center">
 				<Container className="tw-mb-3">
-					<div className="tw-px-6">
+					<div className="tw-px-2 sm:tw-px-6">
 						<h1
 							className="tw-inline-block tw-text-5xl tw-font-extrabold"
 							style={{
@@ -250,9 +254,9 @@ function App() {
 						.map((q, i) => {
 							const content: React.ReactNode[] = []
 
-							if (latestNewQuotes === i) {
+							if (latestNewQuotes === i && showSingularQuotes && showDialogues && !onlyStarred && selectedAuthors.length === 0) {
 								content.push(
-									<div className="tw-px-6 tw-my-2 tw-w-full tw-flex tw-items-center">
+									<div id="new" className="tw-px-6 tw-my-2 tw-w-full tw-flex tw-items-center">
 										<span key={i + "-2"} className="tw-relative tw-text-xs tw-font-bold tw-px-1 tw-rounded-md tw-bg-[red] after:tw-absolute after:tw-w-0 after:tw-h-0 after:tw-top-0 -after:tw-right-2 after:tw-border-8 after:tw-border-[transparent_transparent_transparent_red]">
 											НОВИ
 										</span>
