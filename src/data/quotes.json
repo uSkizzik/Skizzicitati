@@ -2337,12 +2337,8 @@
 		]
 	},
 	{
-		"content": ["Eto vi edna byrza zadacha za izpita v 10-ti klas", "10-ti? Ama nie sme 9-ti...", "Nishto"],
+		"content": ["Eto vi edna burza zadacha za izpita v 10-ti klas", "10-ti? Ama nie sme 9-ti...", "Nishto"],
 		"authors": [
-			{
-				"authorId": 27,
-				"creditedAs": "Pepi"
-			},
 			{
 				"authorId": 32,
 				"creditedAs": "Todorova"
@@ -2350,6 +2346,10 @@
 			{
 				"authorId": 27,
 				"creditedAs": "Pepi"
+			},
+			{
+				"authorId": 32,
+				"creditedAs": "Todorova"
 			}
 		]
 	},
