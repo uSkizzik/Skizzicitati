@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { Form, Offcanvas, OverlayTrigger, Popover } from "react-bootstrap"
 
 import classNames from "classnames"
@@ -170,6 +170,8 @@ function App() {
 	const [showDialogues, setShowDialogues] = useState(true)
 	const [onlyStarred, setOnlyStarred] = useState(false)
 
+	const [latestNewQuotes, setLatestNewQuotes] = useState(0)
+
 	const addSelectedAuthor = (authorId: number) => {
 		setSelectedAuthors(Array.from(new Set([...selectedAuthors, authorId])))
 	}
@@ -180,6 +182,10 @@ function App() {
 
 		setSelectedAuthors(selectedAuthors.toSpliced(authorIndex, 1))
 	}
+
+	useEffect(() => {
+		setLatestNewQuotes(quotes.findLastIndex((q) => q.newQuotes))
+	}, [quotes])
 
 	return (
 		<>
@@ -241,11 +247,24 @@ function App() {
 						.filter((q) => ((showSingularQuotes || showDialogues) && !showDialogues ? q.content.length === 1 : true))
 						.filter((q) => (onlyStarred ? q.starred : true))
 						.filter((q) => (selectedAuthors.length ? q.authors.some((a) => selectedAuthors.includes(a.authorId)) : true))
-						.map((q, i) => (
-							<>
-								<Quote key={i} quote={q} />
-							</>
-						))}
+						.map((q, i) => {
+							const content: React.ReactNode[] = []
+
+							if (latestNewQuotes === i) {
+								content.push(
+									<div className="tw-px-6 tw-my-2 tw-w-full tw-flex tw-items-center">
+										<span key={i + "-2"} className="tw-relative tw-text-xs tw-font-bold tw-px-1 tw-rounded-md tw-bg-[red] after:tw-absolute after:tw-w-0 after:tw-h-0 after:tw-top-0 -after:tw-right-2 after:tw-border-8 after:tw-border-[transparent_transparent_transparent_red]">
+											НОВИ
+										</span>
+										<hr className="tw-flex-grow tw-opacity-100 tw-text-[red] tw-rounded tw-border-[red]" />
+									</div>
+								)
+							}
+
+							content.push(<Quote key={i} quote={q} />)
+
+							return content
+						})}
 				</Container>
 			</div>
 		</>
