@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react"
-import { Form, Offcanvas, OverlayTrigger, Popover } from "react-bootstrap"
+
+import Moment from "react-moment"
+import { Form, Modal, Offcanvas, OverlayTrigger, Popover } from "react-bootstrap"
+
+import { ColumnChart, LineChart, PieChart } from "react-chartkick"
+import "chartkick/chart.js"
 
 import classNames from "classnames"
 
@@ -7,7 +12,6 @@ import { IAuthor, IQuote, IQuoteAuthor } from "@/interfaces/Quote.interface"
 
 import authors from "./data/authors.json"
 import quotes from "./data/quotes.json"
-import Moment from "react-moment"
 
 function getAuthorQuotes(authorId: number) {
 	return quotes.filter((q) => q.authors.some((a) => a.authorId === authorId))
@@ -175,6 +179,7 @@ function Container({ className, children }: { className?: string; children: Reac
 
 function App() {
 	const [show, setShow] = useState(false)
+	const [showStats, setShowStats] = useState(false)
 
 	const [selectedAuthors, setSelectedAuthors] = useState<number[]>([])
 
@@ -208,6 +213,68 @@ function App() {
 			<a className="tw-flex tw-items-center tw-justify-center tw-text-gray-400 tw-text-xl tw-rounded-full tw-bg-background-600 tw-w-[45px] tw-h-[45px] tw-fixed tw-bottom-6 tw-right-6 hover:tw-text-gray-100" href="#new">
 				<i className="fas fa-chevron-down" />
 			</a>
+
+			<Modal centered size="lg" show={showStats} onHide={() => setShowStats(false)}>
+				<Modal.Header closeButton>
+					<Modal.Title>Статистики</Modal.Title>
+				</Modal.Header>
+				<Modal.Body className="tw-p-6 tw-flex tw-flex-wrap tw-justify-around tw-gap-y-10">
+					<div className="tw-w-full md:tw-w-1/2">
+						<PieChart
+							height={200}
+							legend="right"
+							data={[
+								["Без Звездичка", quotes.filter((q) => !q.starred).length],
+								["Със Звездичка", quotes.filter((q) => q.starred).length]
+							]}
+						/>
+					</div>
+					<div className="tw-w-full md:tw-w-1/2">
+						<PieChart
+							height={200}
+							legend="right"
+							data={[
+								["Единични", quotes.filter((q) => q.content.length === 1).length],
+								["Диалогови", quotes.filter((q) => q.content.length > 1).length]
+							]}
+						/>
+					</div>
+					<PieChart
+						donut
+						width="100%"
+						height={250}
+						legend="right"
+						data={Object.entries<number>(
+							quotes.reduce((acc, curr) => {
+								curr.authors.forEach(({ authorId }) => {
+									const author = authors.find((a) => a.authorId === authorId)?.name
+									if (author) acc[author] ? (acc[author] += 1) : (acc[author] = 1)
+								})
+
+								return acc
+							}, {})
+						).filter(([k, v], i) => v >= 7)}
+					/>
+					<LineChart
+						width="100%"
+						legend="bottom"
+						label="Нови цитати на ден"
+						data={quotes
+							.map((q) => q.date)
+							.reduce((acc, curr) => {
+								return curr ? (acc[curr] ? ++acc[curr] : (acc[curr] = 1), acc) : acc
+							}, {})}
+					/>
+					<LineChart
+						width="100%"
+						legend="bottom"
+						label="Общо Цитати"
+						data={quotes.reduce((acc, curr, i) => {
+							return curr.date ? { ...acc, [curr.date]: i + 1 } : acc
+						}, {})}
+					/>
+				</Modal.Body>
+			</Modal>
 
 			<Offcanvas className="tw-bg-background-500" show={show} placement="end" backdrop={false} scroll onHide={() => setShow(false)}>
 				<Offcanvas.Header closeButton>
@@ -250,11 +317,18 @@ function App() {
 							<p className="tw-mb-3">
 								Колекцията расте постоянно от 2021 г. насам, като вмомента съдържа <strong>{quotes.length}</strong> цитата. Беше крайно време да се направи една добре изглеждаща страница, до която всеки има достъп, за да провери колко голям идиот е.
 							</p>
-							{/*<p className="tw-mb-3">*/}
-							{/*	Тук могат да се намерят два вида цитати - единични и диалогови. Диалоговите, както името подсказва, включват двама или повече човека. Цитати, които имат звездичка (<i className="fas fa-star" />) до снимката на автора са (според моя преценка) най-забавни и най-запомнящи се.*/}
-							{/*</p>*/}
-							{/*<p className="tw-mb-3">За ваше удобство, можете да натиснете върху името или профилната снимка на някой, за да видите колко цитати има определения човек и с какви други имена са записвани. Също така можете да филтрирате цитатите като използвате менюто, което можете да отворите с бутончето горе в дясно.</p>*/}
 						</div>
+					</div>
+				</Container>
+				<Container className="tw-mb-3">
+					<div className="tw-px-2 sm:tw-px-6 tw-text-lg tw-mt-2 tw-text-gray-200">
+						<p className="tw-mb-3">
+							Тук могат да се намерят два вида цитати - единични и диалогови. Диалоговите, както името подсказва, включват двама или повече автора. Цитати, които имат звездичка (<i className="fas fa-star" />) до снимката на автора са (според моя преценка) най-забавни и запомнящи се.
+						</p>
+						<p className="tw-mb-5">За ваше удобство, можете да натиснете върху името или профилната снимка на някой, за да видите колко цитати има определения човек и с какви други имена са записвани. Също така можете да филтрирате цитатите като използвате менюто, което можете да отворите с бутончето горе в дясно.</p>
+						<button className="tw-font-bold tw-px-2 tw-py-1 tw-rounded" onClick={() => setShowStats(true)} style={{ background: "linear-gradient(45deg, rgba(131,58,180,0.75) 0%, rgba(253,29,29,0.75) 50%, rgba(252,176,69,0.75) 100%)" }}>
+							<i className="fas fa-chart-pie" /> Статистики
+						</button>
 					</div>
 				</Container>
 				<Container>

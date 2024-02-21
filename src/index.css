@@ -3,21 +3,20 @@
 @tailwind utilities;
 
 body {
-  color: white;
-  background-color: #111217;
+	color: white;
+	background-color: #111217;
 
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-.offcanvas-header button {
-  background-image: var(--bs-btn-close-bg) !important;
+.offcanvas-header button,
+.modal-header button {
+	background-image: var(--bs-btn-close-bg) !important;
 }
 
 .popover-arrow {
-  display: none !important;
+	display: none !important;
 }
