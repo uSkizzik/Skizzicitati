@@ -7,6 +7,7 @@ import { IAuthor, IQuote, IQuoteAuthor } from "@/interfaces/Quote.interface"
 
 import authors from "./data/authors.json"
 import quotes from "./data/quotes.json"
+import Moment from "react-moment"
 
 function getAuthorQuotes(authorId: number) {
 	return quotes.filter((q) => q.authors.some((a) => a.authorId === authorId))
@@ -116,6 +117,11 @@ function Quote({ quote }: { quote: IQuote }) {
 					<OverlayTrigger trigger="click" placement="right" offset={[30, 10]} overlay={Popover}>
 						<span className="tw-font-bold tw-cursor-pointer hover:tw-underline">{quote.authors[0].creditedAs}</span>
 					</OverlayTrigger>
+					{quote.date ? (
+						<span className="tw-text-gray-400 tw-text-sm tw-ms-2">
+							<Moment format="MM/DD/YYYY" date={quote.date} />
+						</span>
+					) : null}
 				</div>
 				<span className="tw-whitespace-pre-line">{quote.content}</span>
 			</div>
@@ -150,6 +156,12 @@ function Dialogue({ quote }: { quote: IQuote }) {
 							</OverlayTrigger>
 						</span>
 						<span className="tw-whitespace-pre-line">{c}</span>
+
+						{i === 0 && quote.date ? (
+							<span className="tw-text-gray-400 tw-text-sm tw-ms-2">
+								<Moment format="MM/DD/YYYY" date={quote.date} />
+							</span>
+						) : null}
 					</div>
 				))}
 			</div>

@@ -11,6 +11,7 @@ export interface IQuoteAuthor {
 export interface IQuote {
 	starred?: boolean
 	newQuotes?: boolean
+	date?: string
 	content: string[]
 	authors: IQuoteAuthor[]
 }
