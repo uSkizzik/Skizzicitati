@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react"
 import Moment from "react-moment"
 import { Form, Modal, Offcanvas, OverlayTrigger, Popover } from "react-bootstrap"
 
-import { ColumnChart, LineChart, PieChart } from "react-chartkick"
+import { LineChart, PieChart } from "react-chartkick"
 import "chartkick/chart.js"
 
 import classNames from "classnames"
