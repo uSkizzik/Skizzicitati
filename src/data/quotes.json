@@ -2549,5 +2549,74 @@
 				"creditedAs": "Kolio"
 			}
 		]
+	},
+	{
+		"newQuotes": true,
+		"date": "2024-02-22",
+		"content": ["kuv toz noviq uchenik?", "emi... nov..."],
+		"authors": [
+			{
+				"authorId": 43,
+				"creditedAs": "Naneva"
+			},
+			{
+				"authorId": 21,
+				"creditedAs": "Aleks"
+			}
+		]
+	},
+	{
+		"date": "2024-02-22",
+		"content": ["prilichash na kloshar", "blagodarq, v tva se celq"],
+		"authors": [
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			},
+			{
+				"authorId": 29,
+				"creditedAs": "Papazov"
+			}
+		]
+	},
+	{
+		"date": "2024-02-22",
+		"content": ["koito vidq, vsichki mi kazvat che sum shtqla da gi blusna"],
+		"authors": [
+			{
+				"authorId": 51,
+				"creditedAs": "Chervenata Shapchica"
+			}
+		]
+	},
+	{
+		"date": "2024-02-23",
+		"content": ["awe papazov, ti kvo si treniral, balet li?"],
+		"authors": [
+			{
+				"authorId": 47,
+				"creditedAs": "Teodor dokato igrae tennis na masa sreshtu Papazov"
+			}
+		]
+	},
+	{
+		"date": "2024-02-23",
+		"content": ["Za kvo go pipash? Da doida az da ti pipam tvoita dupka, nqma da go haresash."],
+		"authors": [
+			{
+				"authorId": 20,
+				"creditedAs": "Ico"
+			}
+		]
+	},
+	{
+		"date": "2024-02-25",
+		"content": ["Na vseki test \"prepisano ot iphone 15 pro\""],
+		"authors": [
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			}
+		]
 	}
 ]
