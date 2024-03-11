@@ -2618,5 +2618,143 @@
 				"creditedAs": "Rado"
 			}
 		]
+	},
+	{
+		"newQuotes": true,
+		"date": "2024-02-27",
+		"content": ["az klatq radostin"],
+		"authors": [
+			{
+				"authorId": 24,
+				"creditedAs": "Dankata"
+			}
+		]
+	},
+	{
+		"date": "2024-02-21",
+		"content": ["Ei go brat, 0-5. Nie sme 2-4, puk az sum 0-5.... Ama sum 05 deto prilicha na tupanar i NQMA BMW, razbirash li? Takuv 05, deto NE MU vurjat."],
+		"authors": [
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			}
+		]
+	},
+	{
+		"date": "2024-03-05",
+		"content": ["Moje li do toaletna, gospojo? Imam bubreci v kamunite..."],
+		"authors": [
+			{
+				"authorId": 17,
+				"creditedAs": "Qnko"
+			}
+		]
+	},
+	{
+		"date": "2024-03-05",
+		"content": ["Az da ti prilicham na Steve Jobs? Az ne sum Steve Jobs, az sum mr. blowjobs"],
+		"authors": [
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			}
+		]
+	},
+	{
+		"date": "2024-03-06",
+		"content": ["De da znam, tati mnogo e ebal sigurno"],
+		"authors": [
+			{
+				"authorId": 16,
+				"creditedAs": "Anji"
+			}
+		]
+	},
+	{
+		"date": "2024-03-07",
+		"content": ["kakto sum gladna, da ne ti izqm banicata deto e otdolu pod china"],
+		"authors": [
+			{
+				"authorId": 51,
+				"creditedAs": "Borisova"
+			}
+		]
+	},
+	{
+		"date": "2024-03-07",
+		"content": ["ai sh otidem s canev, che ne vi stiga edno dete, da stanem dve", "haha", "a, kakvo?"],
+		"authors": [
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			},
+			{
+				"authorId": 14,
+				"creditedAs": "Tihova"
+			},
+			{
+				"authorId": 52,
+				"creditedAs": "Canev"
+			}
+		]
+	},
+	{
+		"date": "2024-03-07",
+		"content": ["po dobre da sum sednal na mekiq stol i da sum kazul che sum gei, ot kolkoto da sedq prav", "epa ti kat sednish na mekiq sh stane korav"],
+		"authors": [
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			},
+			{
+				"authorId": 24,
+				"creditedAs": "Dankata"
+			}
+		]
+	},
+	{
+		"date": "2024-03-08",
+		"content": ["Ei kris, ti imash ebati golqmata tikva"],
+		"authors": [
+			{
+				"authorId": 27,
+				"creditedAs": "Pepco"
+			}
+		]
+	},
+	{
+		"date": "2024-03-08",
+		"content": ["...i programata napravo izbuhva", "Imam programa na devetoklasnik i ne me e strah da q izpolzvam!"],
+		"authors": [
+			{
+				"authorId": 43,
+				"creditedAs": "Naneva"
+			},
+			{
+				"authorId": 0,
+				"creditedAs": "Rado"
+			}
+		]
+	},
+	{
+		"date": "2024-03-11",
+		"content": ["otivai da otkluchish kenefa i naprao sa zakluchvai vutre"],
+		"authors": [
+			{
+				"authorId": 58,
+				"creditedAs": "Genov"
+			}
+		]
+	},
+	{
+		"starred": true,
+		"date": "2024-03-11",
+		"content": ["mulchi we, krisko geq - toi mi lapa az mu peq"],
+		"authors": [
+			{
+				"authorId": 54,
+				"creditedAs": "Kamen"
+			}
+		]
 	}
 ]
